@@ -33,9 +33,7 @@ import com.guideapp.guideapp.ui.views.localdetail.LocalDetailActivity;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * Created by thales on 7/28/15.
- */
+
 public class MapFragment
         extends Fragment
         implements OnMapReadyCallback, MapContract.View {

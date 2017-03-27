@@ -9,9 +9,6 @@ import android.view.View;
 
 import com.guideapp.guideapp.R;
 
-/**
- * Created by thales on 12/12/15.
- */
 public class CommentDialogFragment extends DialogFragment {
 
     @Override

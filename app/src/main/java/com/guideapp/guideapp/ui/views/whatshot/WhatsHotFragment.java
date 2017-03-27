@@ -20,9 +20,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by thales on 6/13/15.
- */
 public class WhatsHotFragment extends Fragment implements RecyclerViewItemClickListener {
     private RecyclerView mRecyclerView;
     private WhatsHotAdapter mAdapter;

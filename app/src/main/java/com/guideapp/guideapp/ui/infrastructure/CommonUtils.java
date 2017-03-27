@@ -8,9 +8,6 @@ import android.view.animation.AnimationUtils;
 
 import com.guideapp.guideapp.R;
 
-/**
- * Created by thales on 7/28/15.
- */
 public class CommonUtils {
     public static void dismissViewLayout(Context context, View view) {
         if (view.getVisibility() == View.VISIBLE) {

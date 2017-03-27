@@ -19,9 +19,6 @@ import com.guideapp.guideapp.model.Local;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by thales on 6/13/15.
- */
 public class FavoriteFragment extends Fragment implements RecyclerViewItemClickListener {
     private RecyclerView mRecyclerView;
     private FavoriteAdapter mAdapter;

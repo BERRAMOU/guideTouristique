@@ -6,9 +6,6 @@ import android.os.Parcelable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by thales on 6/13/15.
- */
 public class Local implements Parcelable {
     private Long id;
     private String description;

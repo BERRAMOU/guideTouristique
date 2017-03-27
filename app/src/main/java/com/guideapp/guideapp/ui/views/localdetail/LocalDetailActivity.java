@@ -30,9 +30,7 @@ import com.guideapp.guideapp.ui.adapters.LocalDetailAdapter;
 import com.guideapp.guideapp.model.LocalDetail;
 import java.util.List;
 
-/**
- * Created by thales on 6/13/15.
- */
+
 public class LocalDetailActivity extends BaseActivity {
     private CollapsingToolbarLayout mCollapsingToolbarLayout;
     private LocalDetailAdapter mAdapter;

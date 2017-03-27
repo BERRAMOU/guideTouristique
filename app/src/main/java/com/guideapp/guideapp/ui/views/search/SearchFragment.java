@@ -23,9 +23,6 @@ import com.guideapp.guideapp.model.Local;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by thales on 6/13/15.
- */
 public class SearchFragment extends Fragment implements SearchAdapter.OnItemClickListener,
         RecyclerViewItemClickListener {
     private RecyclerView mRecyclerView;

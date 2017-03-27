@@ -21,10 +21,6 @@ import com.guideapp.guideapp.R;
 import com.guideapp.guideapp.ui.views.search.SearchFragment.Callbacks;
 import com.guideapp.guideapp.ui.views.BaseActivity;
 
-
-/**
- * Created by thales on 7/30/15.
- */
 public class SearchActivity extends BaseActivity implements Callbacks {
     private EditText mToolbarSearchView;
     private ImageView mSearchClearButton;

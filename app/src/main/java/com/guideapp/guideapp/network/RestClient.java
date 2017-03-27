@@ -13,12 +13,10 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- * Created by thales on 3/16/16.
- */
+
 public class RestClient {
     private static GuideApi mGuideApi;
-    private static String baseUrl = "https://guideapp-br.appspot.com/_ah/api/guideAppApi/v1/" ;
+    private static String baseUrl = "127.1.1.0/api/v1/" ;
 
     private final static long HTTP_RESPONSE_DISK_CACHE_MAX_SIZE = 10 * 1024 * 1024;
     private final static long CONNECTION_TIMEOUT = 5;

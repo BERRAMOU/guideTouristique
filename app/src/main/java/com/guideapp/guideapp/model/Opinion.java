@@ -2,9 +2,6 @@ package com.guideapp.guideapp.model;
 
 import java.util.Date;
 
-/**
- * Created by thales on 11/29/15.
- */
 public class Opinion {
     private int id;
     private String name;

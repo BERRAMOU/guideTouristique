@@ -15,9 +15,7 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 import rx.subscriptions.CompositeSubscription;
 
-/**
- * Created by thales on 1/25/16.
- */
+
 public class LocalFragmentPresenter implements LocalContract.UserActionsFragmentListener {
     private static final String TAG = LocalFragmentPresenter.class.getName();
     private final LocalContract.ViewFragment mLocalViewFragment;

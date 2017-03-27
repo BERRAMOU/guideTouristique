@@ -5,9 +5,7 @@ import com.guideapp.guideapp.R;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by thales on 2/10/16.
- */
+
 public class MenuUser {
     private int description;
     private int icon;

@@ -20,9 +20,7 @@ import com.guideapp.guideapp.model.Local;
 
 import java.util.List;
 
-/**
- * Created by thales on 6/13/15.
- */
+
 public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.LocalViewHolder> {
     private Context mContext;
     private Cursor data;

@@ -21,9 +21,6 @@ import com.guideapp.guideapp.model.Local;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by thales on 6/13/15.
- */
 public class LocalAdapter extends RecyclerView.Adapter<LocalAdapter.LocalViewHolder> {
     private Context mContext;
     private RecyclerViewItemClickListener mListener;

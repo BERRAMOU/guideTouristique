@@ -12,9 +12,6 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 import rx.subscriptions.CompositeSubscription;
 
-/**
- * Created by thales on 1/25/16.
- */
 public class MapPresenter implements MapContract.UserActionsListener {
     private static final String TAG = MapPresenter.class.getName();
     private final MapContract.View mView;

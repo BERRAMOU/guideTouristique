@@ -18,9 +18,7 @@ import com.guideapp.guideapp.ui.adapters.LocalDetailAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by thales on 6/13/15.
- */
+
 public class LocalDetailFragment extends Fragment implements LocalDetailContract.View {
     private LocalDetailAdapter mAdapter;
     private List<LocalDetail> mDataSet;

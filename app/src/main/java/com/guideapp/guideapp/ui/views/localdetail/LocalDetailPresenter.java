@@ -11,9 +11,7 @@ import rx.Observable;
 import rx.Observer;
 import rx.subscriptions.CompositeSubscription;
 
-/**
- * Created by thales on 1/25/16.
- */
+
 public class LocalDetailPresenter implements LocalDetailContract.UserActionsListener {
     private static final String TAG = LocalDetailPresenter.class.getName();
     private final LocalDetailContract.View mLocalView;

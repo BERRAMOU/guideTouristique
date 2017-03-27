@@ -8,9 +8,6 @@ import retrofit2.http.Headers;
 import retrofit2.http.Query;
 import rx.Observable;
 
-/**
- * Created by thales on 3/16/16.
- */
 public interface GuideApi {
 
     @GET("local")

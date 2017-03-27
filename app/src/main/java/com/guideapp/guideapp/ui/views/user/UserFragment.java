@@ -15,9 +15,7 @@ import com.guideapp.guideapp.ui.adapters.UserAdapter;
 import com.guideapp.guideapp.ui.views.login.LoginActivity;
 import com.guideapp.guideapp.model.MenuUser;
 
-/**
- * Created by thales on 7/28/15.
- */
+
 public class UserFragment extends Fragment {
     private OnListFragmentInteractionListener mListener = new OnListFragmentInteractionListener() {
         @Override

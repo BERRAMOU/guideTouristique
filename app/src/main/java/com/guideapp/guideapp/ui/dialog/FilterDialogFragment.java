@@ -13,9 +13,7 @@ import com.guideapp.guideapp.model.SubCategory;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by thales on 12/12/15.
- */
+
 public class FilterDialogFragment extends DialogFragment {
     private List<SubCategory> mSubCategories;
     private long[] mIdSubCategories;

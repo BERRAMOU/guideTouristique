@@ -1,0 +1,205 @@
+<div class="page-locais-new-edit ng-scope-container">
+    <div id="page-wrapper" class="ng-scope-container-shadow">
+        <div class="container-fluid">
+        
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        {{pageDescription}}
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i>  <a href="#/">Accueil</a>
+                        </li>
+                        
+                        <li>
+                            <i class="fa fa-dashboard"></i>  <a href="#/locals">Locaux </a>
+                        </li>
+                        
+                        <li class="active">
+                            <i class="fa fa-file"></i> {{page}}
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+            
+            <form id="form-registration" class="form-registration" novalidate>
+                <div class="form-group">
+
+                    <div class="alert alert-danger" id="alert-registration" role="alert">
+                            <span class="glyphicon glyphicon-exclamation-sign"
+                                  aria-hidden="true"></span>
+                            <span class="sr-only">Error:</span>
+                            <span id="alert-registration-message"></span>
+                        </div>
+
+                        <input type="hidden" class="form-control" id="modal-entity-id"/>
+
+                        <div class="form-group control-group">
+                            <label class="control-label"
+                                   for="modal-entity-id-city">Ville*</label>
+
+                            <select class="form-control" id="modal-entity-id-city" 
+                                    required
+                                    ng-model="selectCity"
+                                    disabled
+                                    ng-change="selectCityChange()"
+                                    data-validation-required-message="Entre com a cidade">
+                                <option value="">Selecione</option>
+                                <option ng-repeat="item in cities"
+                                        data-latitude = "{{item.latitude}}"
+                                        data-longitude = "{{item.longitude}}"
+                                        value="{{item.id}}">{{item.name}}</option>
+                            </select>
+
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="form-group control-group">
+                            <label class="control-label"  for="modal-entity-id-category">Catégorie*</label>
+
+                            <select class="form-control" 
+                                    ng-model="selectCategoy"
+                                    disabled
+                                    ng-change="selectCategoryChange()"
+                                    id="modal-entity-id-category">
+                                <option value="">Selecione</option>
+                                <option ng-repeat="item in categories"
+                                        value="{{item.id}}">{{item.description}}</option>
+                            </select>
+
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="form-group control-group">
+                            <label class="control-label"
+                                   for="modal-entity-id-sub-category">Sous-Catégorie*</label>
+
+                            <select class="form-control" 
+                                    multiple 
+                                    disabled
+                                    ng-model="selectSubCategoy"
+                                    id="modal-entity-id-sub-category">
+                                <option value="" class="hide">Selecione</option>
+                                <option ng-repeat="item in subCategories" value="{{item.id}}">{{item.description}}</option>
+                            </select>
+
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="form-group control-group">
+                            <label class="control-label" for="modal-entity-description">Description*</label>
+
+                            <input type="text" class="form-control"
+                                   id="modal-entity-description"
+                                   required
+                                   data-validation-required-message="Entrer un description">
+                            <p class="help-block text-danger"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label" for="modal-entity-description">image*</label>
+
+                            <input name="file" type="file" id="file"/>
+                        </div>
+
+                        <div class="form-group control-group">
+                                <div id="image-group" class="image empty">
+
+                                    <span id="image-loading" class="ring-alt image-loading hide"></span>
+                                    <span class="text-upload-file image-legend">Résolution: 1024 (largeur) x 500 (hauteur)</span>
+                                    <span class="glyphicon glyphicon-picture image-legend"></span>
+
+                                    <img id="image-local" src="" alt="Image local " class="hide"
+                                         width="275"/>
+                                </div>
+
+                                <input type="hidden" id="modal-entity-image-path"
+                                       required
+                                       data-validation-required-message="Entrer une image"/>
+                                <p class="help-block text-danger"></p>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label class="control-label"
+                                   for="modal-entity-site">Site</label>
+
+                            <input type="text" class="form-control" id="modal-entity-site">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label"
+                                   for="modal-entity-phone">Tel</label>
+
+                            <input type="text" class="form-control" id="modal-entity-phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label"
+                                   for="modal-entity-address">Adresse</label>
+
+                            <input type="text" class="form-control" id="modal-entity-address">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label"
+                                   for="modal-entity-detail">détail</label>
+
+                            <input type="text" class="form-control" id="modal-entity-detail">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Wifi </label>
+
+                            <label class="radio-inline">
+                                <input type="radio" name="wifi" id="modal-entity-yes"
+                                       value="yes"> Oui
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="wifi" id="modal-entity-no" value="no"
+                                       checked> Non
+                            </label>
+                        </div>
+
+                        <div class="form-group control-group">
+                            <label for="modal-entity-latitude"
+                                   class="control-label">Latitude*</label>
+                            <input type="text" class="form-control" id="modal-entity-latitude"
+                                   required disabled
+                                   data-validation-required-message="Sélectionnez la position de la carte">
+                            <p class="help-block text-danger text-map"></p>
+                        </div>
+
+                        <div class="form-group control-group">
+                            <label for="modal-entity-longitude"
+                                   class="control-label">Longitude*</label>
+                            <input type="text" class="form-control" id="modal-entity-longitude"
+                                   required disabled
+                                   data-validation-required-message="Sélectionnez la position de la carte">
+                            <p class="help-block text-danger text-map"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label"></label>
+                            <div id="map-canvas"></div>
+                        </div>
+
+                </div>
+                
+                
+                <div class="modal-footer">
+                    <a href="#/locals" type="button" class="btn btn-default">Retour
+                    </a>
+                    <button type="submit" class="btn btn-primary" id="modal-city-save">Sauvegarder
+                    </button>
+                </div>
+            </form>
+               
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrappe -->
+</div>
+<!-- /.page-cities -->

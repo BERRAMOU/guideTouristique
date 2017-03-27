@@ -11,9 +11,7 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 import rx.subscriptions.CompositeSubscription;
 
-/**
- * Created by thales on 1/25/16.
- */
+
 public class LocalActivityPresenter implements LocalContract.UserActionsActivityListener {
     private static final String TAG = LocalActivityPresenter.class.getName();
     private final LocalContract.ViewActivity mLocalViewActivity;

@@ -28,9 +28,6 @@ import com.guideapp.guideapp.model.LocalDetail;
 
 import java.util.List;
 
-/**
- * Created by thales on 6/13/15.
- */
 public class LocalDetailAdapter extends RecyclerView.Adapter<LocalDetailAdapter.LocalViewHolder> {
     private FragmentActivity mContext;
     private RecyclerViewItemClickListener mListener;

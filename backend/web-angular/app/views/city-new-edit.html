@@ -1,0 +1,113 @@
+<div class="page-cities-new-edit ng-scope-container">
+    <div id="page-wrapper" class="ng-scope-container-shadow">
+        <div class="container-fluid">
+        
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        {{pageDescription}}
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i>  <a href="#/">Accueil</a>
+                        </li>
+                        
+                        <li>
+                            <i class="fa fa-dashboard"></i>  <a href="#/cities">Villes</a>
+                        </li>
+                        
+                        <li class="active">
+                            <i class="fa fa-file"></i> {{page}}
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+            
+            <form id="form-registration" class="form-registration" novalidate>
+                <div class="form-group" >
+                    <div class="alert alert-danger" id="alert-registration" role="alert">
+                        <span class="glyphicon glyphicon-exclamation-sign"
+                              aria-hidden="true"></span>
+                        <span class="sr-only">Error:</span>
+                        <span id="alert-registration-message"></span>
+                    </div>
+
+                    <input type="hidden" class="form-control" id="modal-city-id">
+
+                    <div class="form-group control-group">
+                        <label class="control-label" for="modal-city-uf">Région*</label>
+                        <select class="form-control" id="modal-city-uf" required
+                                data-validation-required-message="Entrez une Région">
+
+                            <option value="">Sélectionnez une Région</option>
+                            <option value="tt">Tanger-Tétouan</option>
+                            <option value="gcb">Gharb-Chrarda-Beni Hssen</option>
+                            <option value="tht">Taza-Al Hoceima-Taounate</option>
+                            <option value="o">Oriental</option>
+                            <option value="fb">Fès-Boulemane</option>
+                            <option value="mt">Meknès-Tafilalet</option>
+                            <option value="rsz"> Rabat-Salé-Zemmour-Zaër</option>
+                            <option value="gc">Grand Casablanca</option>
+                            <option value="co"> Chaouia-Ouardigha</option>
+                            <option value="da"> Doukkala-Abda</option>
+                            <option value="mth"> Marrakech-Tensift-Al Haouz</option>
+                            <option value="ta">Tadla-Azilal</option>
+                            <option value="smd">Souss-Massa-Drâa</option>
+                            <option value="gs">Guelmim-Es Smara</option>
+                            <option value="lbs">Laâyoune-Boujdour-Sakia el Hamra</option>
+                            <option value="od">Oued Ed-Dahab-Lagouira</option>
+
+                        </select>
+
+                        <p class="help-block text-danger"></p>
+                    </div>
+
+                    <div class="form-group control-group">
+                        <label class="control-label" for="modal-city-name">Ville*</label>
+
+                        <input name="form-registration" type="text" class="form-control" id="modal-city-name" required
+                               data-validation-required-message="Entrer un nom">
+                        
+                        <p class="help-block text-danger"></p>
+                    </div>
+
+                    <div class="form-group control-group">
+                        <label for="modal-entity-latitude"
+                               class="control-label">Latitude*</label>
+                        <input type="text" class="form-control" id="modal-entity-latitude"
+                               required disabled
+                               data-validation-required-message="Sélectionnez la position de la carte">
+                        <p class="help-block text-danger"></p>
+                    </div>
+
+                    <div class="form-group control-group">
+                        <label for="modal-entity-longitude"
+                               class="control-label">Longitude*</label>
+                        <input type="text" class="form-control" id="modal-entity-longitude"
+                               required disabled
+                               data-validation-required-message="Sélectionnez la position de la carte">
+                        <p class="help-block text-danger"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label"></label>
+                            <div id="map-canvas"></div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#/cities" type="button" class="btn btn-default">Retour
+                    </a>
+                    <button type="submit" class="btn btn-primary" id="modal-city-save">Sauvegarder
+                    </button>
+                </div>
+            </form>
+               
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrappe -->
+</div>
+<!-- /.page-cities -->

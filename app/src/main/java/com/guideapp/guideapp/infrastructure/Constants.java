@@ -1,8 +1,6 @@
 package com.guideapp.guideapp.infrastructure;
 
-/**
- * Created by thales on 3/28/16.
- */
+
 public final class Constants {
 
     /**

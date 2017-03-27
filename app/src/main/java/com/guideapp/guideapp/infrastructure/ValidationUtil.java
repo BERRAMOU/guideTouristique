@@ -2,9 +2,6 @@ package com.guideapp.guideapp.infrastructure;
 
 import java.util.List;
 
-/**
- * Created by thales on 3/19/16.
- */
 public final class ValidationUtil {
     /**
      * Constructor

@@ -18,9 +18,7 @@ import com.guideapp.guideapp.ui.widget.DividerItemDecoration;
 import com.guideapp.guideapp.model.Local;
 import java.util.List;
 
-/**
- * Created by thales on 6/13/15.
- */
+
 public class LocalFragment extends Fragment
         implements LocalAdapter.RecyclerViewItemClickListener, LocalContract.ViewFragment {
     private LocalAdapter mAdapter;

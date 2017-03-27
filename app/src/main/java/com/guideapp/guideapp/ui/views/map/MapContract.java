@@ -3,9 +3,6 @@ package com.guideapp.guideapp.ui.views.map;
 import com.guideapp.guideapp.model.Local;
 import java.util.List;
 
-/**
- * This specifies the contract between the view and the presenter.
- */
 public interface MapContract {
     /**
      * Interface ViewFragment

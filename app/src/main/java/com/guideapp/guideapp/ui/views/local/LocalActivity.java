@@ -20,9 +20,6 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-/**
- * Local Activity
- */
 public class LocalActivity extends BaseActivity
         implements LocalContract.ViewActivity, FilterDialogFragment.FilterDialogPositiveListener {
     @Bind(R.id.toolbar) Toolbar mToolbar;

@@ -8,10 +8,6 @@ import android.support.v7.widget.Toolbar;
 import com.guideapp.guideapp.R;
 import com.guideapp.guideapp.ui.views.BaseActivity;
 
-
-/**
- * Created by thales on 7/30/15.
- */
 public class LocalPhotoActivity extends BaseActivity {
     public static void navigate(Context context) {
         Intent intent = new Intent(context, LocalPhotoActivity.class);
